@@ -254,11 +254,158 @@ fun main(){
     //if-else-if ladder expression
     //nested if expression
 
+
 // if statement:
+/*
     /*
         Syntax:  if(condition) { //
             // code to run if condition is true
         }
     */
+
+
+fun main(){
+    var a = 3
+    if(a > 0){
+        print("Yes, the number is positive")
+    }
+}
+
+ */
+
+
+// if-else statement:
+    /*
+        Syntax:
+
+            if(condition) {
+                // code to run if condition is true
+            }
+            else {
+                // code to run if condition is false
+            }
+
+     */
+
+/*
+fun main(){
+    var a = 30
+    var b = 30
+
+    if( a > b){
+        print("condition true, code is executed $a is larger than $b")
+    }
+    else{
+        print("condition false, code is not executed")
+    }
+}
+
+ */
+
+
+
+// Kotlin if-else expression as ternary operator:
+//
+/*
+fun main(){
+    var a = 50
+    var b = 40
+
+    // here if-else returns a value which
+    // is to be stored in max variable
+    var max = if(a > b){
+        print("Greater number is: ")
+        a
+    }
+    else{
+        print("Greater number is: ")
+        b
+    }
+    print(max)
+}
+
+ */
+
+// if-else-if ladder expression:
+/*
+    Syntax:
+        if(firstCondition){
+            // code to run if condition is true
+         }
+         else if(secondCondition){
+            // code to run if condition is true
+         }
+         else{
+         }
+ */
+
+
+// Example code:
+/*
+
+import java.util.Scanner
+
+fun main(){
+    val reader = Scanner(System.`in`)
+    print("Enter any number: ")
+
+    // read the next Integer value
+    var num = reader.nextInt()
+    var result = if (num > 0){
+        "$num is a positive number"
+    }
+    else if(num < 0){
+        "$num is a negative number"
+    }
+    else{
+        "$num is equal to zero"
+    }
+    println(result)
+}
+*/
+
+
+// nested if expression:
+
+        /*
+            Syntax:
+                if(condition1){
+                    // code1
+                    if(condition2){
+                         // code2
+                    }
+                }
+         */
+
+
+import java.util.Scanner
+
+fun main(){
+    val reader = Scanner(System.`in`)
+    print("Enter Three numbers: ")
+
+    var num1 = reader.nextInt()
+    var num2 = reader.nextInt()
+    var num3 = reader.nextInt()
+
+    var max = if(num1 > num2){
+
+        if(num1 > num3){
+            "$num1 is the largest number"
+        }
+        else{
+            "$num3 is the largest number"
+    }
+
+    }
+    else if( num2 > num3){
+        "$num2 is the largest number"
+    }
+    else{
+        "num3 is the largest number"
+    }
+    println(max)
+}
+
 
 
